@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus: AI & IoT for Smart Industries</title>
+    <style>
+        /* CSS Variables for consistent theming and easy maintenance */
+        :root {
+            --primary-color: #0f172a;    /* Deep Slate */
+            --secondary-color: #2563eb;  /* Tech Blue */
+            --text-main: #334155;        /* Dark Gray for readability */
+            --text-light: #64748b;       /* Medium Gray for secondary text */
+            --bg-body: #f8fafc;          /* Off-white background */
+            --bg-card: #ffffff;          /* White cards */
+        }
+
+        /* Base Typography & Reset - Ensuring legibility */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Clear Text Hierarchy */
+        h1, h2, h3 {
+            color: var(--primary-color);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 2.25rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1.25rem; }
+
+        /* Layout - Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e293b 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.875rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Layout - Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+        }
+
+        /* Intuitive Layout - CSS Grid for Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.875rem;
+            margin-top: 4rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.875rem; }
+            .hero { padding: 4rem 1.5rem; }
+            .container { padding: 3rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Nexus</h1>
+        <p>Integrating Artificial Intelligence with the Internet of Things to pioneer the next generation of smart, self-optimizing industrial ecosystems.</p>
+        <a href="#solutions" class="btn">Explore Solutions</a>
+    </header>
+
+    <main class="container" id="solutions">
+        <div class="section-header">
+            <h2>The Convergence of Data and Intelligence</h2>
+            <p>We transform traditional manufacturing environments into connected, intelligent facilities. By pairing real-time IoT telemetry with advanced AI predictive models, Nexus drives unprecedented efficiency.</p>
+        </div>
+
+        <div class="features-grid">
+            <article class="feature-card">
+                <h3>Predictive Maintenance</h3>
+                <p>Anticipate equipment failures before they occur. Our neural networks analyze vibration, temperature, and output data from IoT sensors to schedule maintenance precisely when needed, reducing downtime by up to 40%.</p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Intelligent Automation</h3>
+                <p>Move beyond static, rule-based assembly lines. Nexus enables machinery to adapt to dynamic conditions, autonomously optimizing production speed and workflows based on real-time supply chain data.</p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Resource Optimization</h3>
+                <p>Monitor energy consumption and raw material usage with granular precision. AI algorithms continuously adjust operational parameters to minimize waste, lower costs, and reduce your industrial carbon footprint.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nexus Smart Industries. Driving the Fourth Industrial Revolution.</p>
+    </footer>
+
+</body>
+</html>
